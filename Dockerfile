@@ -9,7 +9,7 @@ ENV LC_ALL C.UTF-8
 RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 RUN apt-get update && apt-get dist-upgrade -y && apt-get upgrade -y
 RUN apt-get install -y \
-    build-essential binutils git ninja-build cmake bear python python3 python-pip python3-pip \
+    build-essential binutils git ninja-build cmake python python3 python-pip python3-pip \
     curl wget libcurl4-openssl-dev vim tree sudo
 RUN apt-get install -y \
     gcc g++ libgomp1 libpomp-dev
