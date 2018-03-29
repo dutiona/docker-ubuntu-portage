@@ -13,7 +13,7 @@ RUN apt-get install -y \
     curl wget libcurl4-openssl-dev vim tree sudo
 RUN apt-get install -y \
     gcc g++ libgomp1 libpomp-dev
-# RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y && apt-get autoclean -y && rm -rf /var/lib/apt/lists/
+RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y && apt-get autoclean -y && rm -rf /var/lib/apt/lists/
 
 # Setting up gentoo user
 RUN useradd -m -d /home/gentoo gentoo && cp /root/.bashrc /root/.profile /home/gentoo
